@@ -17,6 +17,8 @@ int main() {
         getSelection(&selection);
 
         switch (selection) {
+            case '0':
+                break;
             case '1':
                 rollPercentage();
                 break;
@@ -28,16 +30,15 @@ int main() {
                 break;
             case '4': 
                 rollCombo();
-		break;
+                break;
             case '5':
                 generateCharacter();
-		break;
+                break;
             default:
+                printf("\nChoom, c'mon. Enter a valid selection.\n\n");
                 break;
         }
-    } while(selection == '1' || selection == '2' || 
-            selection == '3' || selection == '4' || 
-            selection == '5' || selection == '6');
+    } while(selection != '0');
     
     return 0;
 }
@@ -50,7 +51,8 @@ void displayMenu() {
     printf("  (3) - Roll some D6s.\n");
     printf("  (4) - Roll a combination of D6s and D10s\n");
     printf("  (5) - Generate a character and equipment.\n");
-    printf("  (6) - Determine damage points after healing.\n\n");
+    printf("  (6) - Determine damage points after healing.\n");
+    printf("  (0) - Exit\n\n");
     printf("So, what do you wanna do? ");
 }
 
