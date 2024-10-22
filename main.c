@@ -18,6 +18,7 @@ int main() {
 
         switch (selection) {
             case '0':
+                printf("\nLater, choom.\n\n");
                 break;
             case '1':
                 rollPercentage();
@@ -35,7 +36,7 @@ int main() {
                 generateCharacter();
                 break;
             default:
-                printf("\nChoom, c'mon. Enter a valid selection.\n\n");
+                printf("\nChoom, c'mon... Enter a valid selection.\n\n");
                 break;
         }
     } while(selection != '0');
