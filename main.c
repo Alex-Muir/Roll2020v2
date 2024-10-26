@@ -4,9 +4,11 @@
 
 void displayMenu(); 
 void getSelection(char*);
+void invalidSelection(int*);
 
 int main() {
-
+    
+    int invalid = 0;
     char selection = '0';
     srand(time(NULL));
 
@@ -36,7 +38,7 @@ int main() {
                 generateCharacter();
                 break;
             default:
-                printf("\nChoom, c'mon... Enter a valid selection.\n\n");
+                invalidSelection(&invalid);
                 break;
         }
     } while(selection != '0');
@@ -61,6 +63,22 @@ void displayMenu() {
 void getSelection(char* selection) {
 
     scanf(" %c", selection); 
+}
+
+void invalidSelection(int* invalid) {
+
+    (*invalid)++;
+
+    if(*invalid > 4) {
+        printf("\nWhat a waste of time. Come back when you're serious.\n\n");
+        exit(EXIT_FAILURE);
+
+    } else if(*invalid > 2) {
+        printf("\nStop messin' around. Is this a joke to you?\n\n");
+    } else {
+        printf("\nChoom, c'mon... Enter a valid selection.\n\n");
+    }
+    
 }
 
 
