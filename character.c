@@ -4,8 +4,6 @@
 // Generate character stats 
 void _generateStats(bool *isSolo) {
 
-    //printf("In generateStats\n");
-
 	char *roles[] = {"Rockerboy", "Solo", "Netrunner", "Techie", "Media", 
 					 "Cop", "Corpo", "Fixer", "Nomad"};
 	int MA, BODY, EMP, BTM;

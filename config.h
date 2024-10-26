@@ -2,10 +2,10 @@
 #define CONFIG_H
 
 #include <stdio.h>      // printf, fprintf, stderr, scanf, getchar
-#include <stdlib.h>     // srand, rand
+#include <stdlib.h>     // srand, rand, exit
 #include <time.h>       // time
-#include <stdbool.h>
-#include <string.h>
+#include <stdbool.h>    // bool, true, false
+#include <string.h>     // strcmp
 
 #define     D_10    		10      // number of sides on a D10
 #define     D_6     		6       // number of ides on a D6
