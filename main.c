@@ -20,19 +20,28 @@ int main() {
                 printf("\nLater, choom.\n\n");
                 break;
             case '1':
-                rollPercentage();
+                printInstructions();
                 break;
             case '2':
-                rollD10();
+                rollPercentage();
                 break;
             case '3':
-                rollD6();
+                rollD10();
                 break;
             case '4': 
-                rollCombo();
+                rollD6();
                 break;
             case '5':
+                rollCombo();
+                break;
+            case '6': 
                 generateCharacter();
+                break;
+            case '7':
+                printf("Coming soon: Determine damage points after healing.\n\n");
+                break;
+            case '8':
+                printf("Coming soon: Generate character life path.\n\n");
                 break;
             default:
                 invalidSelection(&invalid);
