@@ -15,7 +15,7 @@ void _getNumD10(int *numD10) {
 
         printf("\nHow many D10 would you like to roll? ");
         while(scanf("%d", numD10) != 1) {
-			printf("\nBit too much Blue Glass, choom? You're flashin' out. C'mon, enter a number.\n");
+			printf("\nBit too much Blue Glass, choom? C'mon, enter a number. ");
 
 			while(getchar() != '\n')
 				;
@@ -56,7 +56,7 @@ void _getNumD6(int *numD6) {
 
         printf("\nHow many D6 would you like to roll? ");
         while(scanf("%d", numD6) != 1) {
-			printf("\nOne can of Smash too many. Numbers only!\n");
+			printf("\nHow many cans of Smash have you had?. Numbers only! ");
 			
 			while(getchar() != '\n')
 				;
