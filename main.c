@@ -1,5 +1,6 @@
 #include "config.h"
 #include "dice.h"
+#include "lifepath.h"
 #include "character.h"
 #include "menu.h"
 
@@ -42,6 +43,7 @@ int main() {
                 break;
             case '8':
                 printf("Coming soon: Generate character life path.\n\n");
+                generateLifePath();
                 break;
             default:
                 invalidSelection(&invalid);
